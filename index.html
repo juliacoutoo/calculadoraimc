@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assets/img/ilustration.svg" alt="Ilustração de Exercício">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">Calculadora - IMC</h1>
+
+                <div class="input-box">
+                    <label for="weight">Peso em KG</label>
+                    <div class="input-field">
+                        <input type="number" id="weight" name="weight" required>
+                        <span>KG</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em Metros</label>
+                    <div class="input-field">
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+
+                <button id="calculate">Calcular</button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div id="more_info">
+                    <a href="https://marjan.com.br/blog/massa-corporal/">Saiba mais sobre seu IMC!
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
